@@ -1,0 +1,46 @@
+{
+  "short_name": "VentusTalk",
+  "name": "Ventus-Talk Chat Application",
+  "icons": [
+    {
+      "src": "https://cdn.glitch.global/4c6a40f6-0654-48bd-96e4-a413b8aa1ec0/f192.png?v=1737434510763",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn.glitch.global/4c6a40f6-0654-48bd-96e4-a413b8aa1ec0/f512.png?v=1737434504548",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/loading.html",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "gcm_sender_id":"103953800507",
+  "theme_color": "#000000",
+  "scope": "/",
+  "description": "Ventus-Talkはリアルタイムチャットアプリケーションです。",
+  "shortcuts": [
+    {
+      "name": "ホーム",
+      "short_name": "ホーム",
+      "description": "ホームページを開きます",
+      "url": "/home/home.html",
+      "icons": [{ "src": "/images/icons-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "トーク",
+      "short_name": "トーク",
+      "description": "トークページを開きます",
+      "url": "/talk/index.html",
+      "icons": [{ "src": "/images/icons-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "設定",
+      "short_name": "設定",
+      "description": "設定ページを開きます",
+      "url": "/settings/settings.html",
+      "icons": [{ "src": "/images/icons-192.png", "sizes": "192x192" }]
+    }
+  ]
+}

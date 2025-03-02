@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "ventus-talk-dev",
+  "private_key_id": "1d6a05c348beb8722704d61295e554e6a492bec5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCxNdn72nuPEibz\nVfvj0Rcttv5qyNw2bp1qUfhIm2+Et0LYU7XnVmPgusu2SxodgBOKfG1i6Ihhl8dF\nAj4jTcT5JhhjZa8OoLdeMARNNxnDrhGXWHhrT20DW4BZxy8Jfn7vsH7t3eNnyHV8\nmPJIslUmLvqj76oxklWlWPZjHEy0HT8vTBMPQA0nsss8yXv9zOI4NHd4JhiFqh8s\nYcnH9FS+T65fv782DOCIATGs1v4NMKqdBDceTntmgBtcdyurPTHhCfP3BTepvxPe\n46vEEJ1OPnHXZ45ixPKXaqT+r/8ibgjY7xFvdlIZlZqMnGSfK/ltSNl+e0vEh/9g\nSjTyco2/AgMBAAECgf9grgCUZvOsxTp63MOP3C3JGGJf3+BEfL9k7Kjdnpo4zcKq\nQwFQNNGeHvWvfp8WI8naxAeUQ/N5Sv/BpneVddhWFXKOHUEPD0pQbeHq6STP8nz7\nv53y7beLyAqTmxe5FkoqenVv+0kVq0fDB658pXkkW9JiSLQ8V0Rim9EllqBCTXOF\n1XLNLH1Ku6aZhhbRNDSxAItyuR9DSFqtYHvB+9T8jjTEkV87HvsqhC4JdkmoAc5/\nEK7E+XQPdM6J9SN4gcammEkVIYDmGx5C2l5g4Oy/CQRn6IVfxVHedInt69+w0JTF\nqCx5nkLPEytBLaGobkwsrwhFRv2lC8wFvQTEeykCgYEA7CqFSbqB38ldha9EeG5O\n9S0KnORCkRu7tZiLDfrdMHNrWAZXg6+Ncw9QtfcVOgWHMxh4mVdGZQFgOtHrTcCA\n7Hb1SM0/k73+bSSDg57mCnQXQS4ZRr4AGnT0sl3ZY+IscqXN6yNuul9diRAxgAYO\n29niCMooP6w+sePNQ2PVFoMCgYEAwBfOK8GUGParhlFS33+uJqrb06SBVo+uWcP8\n7kP8ZlUt6Z0HcQyez1AQYkG3ZRyBhAlc2pFIcV31WiKAPQ42A8Ao8qDCu7HQgWWA\nmzInku3HFs19dY91+mYUqnBWqWdRlbwpzXaRi/Jspy7MP1K8qZooHcV5q7QErKxi\nmKYjZxUCgYEArpTUSWeNYKBb+VpSVHC+/7GXOdnnd5u3zIuCqAf+ATYhcUXm5dsd\nxqPYt1t7HpQ9mMELTdfdmwdEWtcZijW3WJarxnCsAgyei5JFgkQxrCKbmjx4xPnp\n26T/yudjr9nfn7UAH0XnMfETlSIaZZiU3WMZHARNcpxjEF/lOl8Pg/8CgYBS7PPw\nJ81LSZGalpj0KyZ/QttLboT3XWejENyr72WSt8ruQv/nac9VJ/cqs7v8RmYTHgeb\nw4RGjI1Sr/o0YWIoFFiZBZWLeaPNeIggd3JmF4gO6/7xNVF1G4RoX77JuvSZc3WI\nYVtL0wfc1HMQEyOnBAm1cH6qBTjPYkveIjq+UQKBgApzMrnlW9wwVbeX02Ub45mv\nDO9D2l8WyfS3enedVszmQCeWBdEfIzur6nznebbiELX8Nt6OIiqeFvXv5+AErLnS\nRQHoCivJPdkNdThvk88xVxxnVbb9jxc2OXX9twrPSar04ejMfyj7nxjINNmWkzU9\nCaRXezANjPRnaweHgXSF\n-----END PRIVATE KEY-----\n",
+  "client_email": "ventus-talk-dev@ventus-talk-dev.iam.gserviceaccount.com",
+  "client_id": "112345994632872846476",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ventus-talk-dev%40ventus-talk-dev.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

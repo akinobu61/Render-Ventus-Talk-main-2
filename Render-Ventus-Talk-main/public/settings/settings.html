@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+  <script src="../drirectRecover.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+  
+    <link rel="manifest" href="../manifest.json">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../menu.css">
+    <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="../log.css">
+    <script src="//cdn.jsdelivr.net/npm/eruda"></script>
+    <script>eruda.init();</script>
+</head>
+<body>
+    <div id="container">
+        <div id="left-panel">
+            <!-- Add the button with image and text -->
+            <div id="user-info">
+                <img src="profile-pic.jpg" alt="Profile Picture">
+                <div id="username">ユーザー名</div>
+                <div id="status">ステータス</div>
+            </div>
+            
+            <!-- ここに追加 --> 
+            <div id="settings-list">
+                <div class="settings-item" data-page="profile">プロフィール</div>
+                <div class="settings-item" data-page="account-settings">アカウント/通知設定</div>
+                <div class="settings-item" data-page="font">フォント</div>
+                <div class="settings-item" data-page="app-icon">アプリアイコン</div>
+                <div class="settings-item" data-page="photos-videos">写真と動画</div>
+                <div class="settings-item" data-page="talk-settings">トーク</div>
+                <div class="settings-item" data-page="friends">友達</div>
+                <div class="settings-item" data-page="terms">利用規約</div>
+                <div class="settings-item" data-page="privacy">プライバシーポリシー</div>
+                <div class="settings-item" data-page="system">システム情報</div>
+                <div class="settings-item" data-page="developer">開発陣より</div>
+            </div>
+
+            <!-- 下部のメニューバーを追加 -->
+            <div id="bottom-menu-bar">
+                <div class="menu-item" data-page="home">
+                    <img src="https://cdn.glitch.global/4c6a40f6-0654-48bd-96e4-a413b8aa1ec0/ICOHome.png?v=1737195839565" alt="ホームアイコン">
+                    <div>ホーム</div>
+                </div>
+                <div class="menu-item" data-page="talk">
+                    <img src="https://cdn.glitch.global/4c6a40f6-0654-48bd-96e4-a413b8aa1ec0/ICOTalk.png?v=1737195832005" alt="トークアイコン">
+                    <div>トーク</div>
+                </div>
+                <div class="menu-item" data-page="settings">
+                    <img src="https://cdn.glitch.global/4c6a40f6-0654-48bd-96e4-a413b8aa1ec0/ICOSetting.png?v=1737195842738" alt="設定アイコン">
+                    <div>設定</div>
+                </div>
+            </div>
+        </div>
+        <div id="right-panel">
+          <button id="back-button">＜</button><!--モバイル用-->
+            <!-- 設定の名前を表示 -->
+            <div id="settings-content">設定を選択してください</div>            
+            <!-- 設定ページを追加 -->
+            <div id="profile" class="settings-page" style="display: none;">
+                <h2>プロフィール</h2>
+                <div id="current-profile-image-container">
+                    <img id="current-profile-image" alt="現在のプロフィール画像">
+                </div>
+                <div class="profile-item">
+                    <label for="username-input">ユーザーネーム:</label>
+                    <input type="text" id="username-input" class="styled-input">
+                    <button id="change-username" class="styled-button">変更</button>
+                </div>
+                <div class="profile-item">
+                    <input type="file" id="profile-image-input" accept="image/*" class="styled-button">
+                    <button id="upload-profile-image" class="styled-button">画像をアップロード</button>
+                </div>
+            </div>
+            <div id="account-settings" class="settings-page" style="display: none;">
+                <h2>アカウント/通知設定</h2>
+                <div class="profile-item">
+                  <button id="notification" class="styled-button">通知を許可する</button>
+                  <button id="renotice" class="styled-button">通知が来ない場合</button>
+                    <button id="signout-button" class="styled-button">サインアウト</button>
+                </div>
+                <!-- プライバシー設定の内容 -->
+            </div>
+
+
+            <div id="font" class="settings-page" style="display: none;">
+                <h2>フォント</h2>
+                <div class="font-item">
+                    <label for="font-select">フォントを選択:</label>
+                  <p>
+                    The quick brown fox jumps over the lazy dog. ,-1234567890 こんにちは世界！ABCDEFGHIJKLMNOPQRSTUVWXYZ &*#@!?。
+                  </p>
+                  <div class="select-container">
+                    <select id="font-select">
+                      <option value="Arial" style="font-family: Arial;">Arial</option>
+                      <option value="Verdana" style="font-family: Verdana;">Verdana</option>
+                      <option value="Tahoma" style="font-family: Tahoma;">Tahoma</option>
+                      <option value="メイリオ" style="font-family: 'メイリオ';">メイリオ</option>
+                      <option value="MS ゴシック" style="font-family: 'MS ゴシック';">MS ゴシック</option>
+                      <option value="MS 明朝" style="font-family: 'MS 明朝';">MS 明朝</option>
+                      <option value="Courier New" style="font-family: 'Courier New';">Courier New</option>
+                      <option value="Georgia" style="font-family: Georgia;">Georgia</option>
+                      <option value="Times New Roman" style="font-family: 'Times New Roman';">Times New Roman</option>
+                      <option value="Comic Sans MS" style="font-family: 'Comic Sans MS';">Comic Sans MS</option>
+                      <option value="Brush Script MT" style="font-family: 'Brush Script MT';">Brush Script MT</option>
+                      <option value="Lucida Handwriting" style="font-family: 'Lucida Handwriting';">Lucida Handwriting</option>
+                      <option value="Palatino Linotype" style="font-family: 'Palatino Linotype';">Palatino Linotype</option>
+                      <option value="Trebuchet MS" style="font-family: 'Trebuchet MS';">Trebuchet MS</option>
+                      <option value="Impact" style="font-family: Impact;">Impact</option>
+                      <option value="Consolas" style="font-family: Consolas;">Consolas</option>
+                      <option value="Garamond" style="font-family: Garamond;">Garamond</option>
+                      <option value="Arial Black" style="font-family: 'Arial Black';">Arial Black</option>
+                      <option value="Helvetica" style="font-family: Helvetica;">Helvetica</option>
+                      <option value="Gill Sans" style="font-family: 'Gill Sans';">Gill Sans</option>
+                      <option value="Yu Gothic" style="font-family: 'Yu Gothic';">Yu Gothic</option>
+                      <option value="Hiragino Kaku Gothic Pro" style="font-family: 'Hiragino Kaku Gothic Pro';">Hiragino Kaku Gothic Pro</option>
+                      <option value="Hiragino Mincho Pro" style="font-family: 'Hiragino Mincho Pro';">Hiragino Mincho Pro</option>
+                      <option value="Noto Sans JP" style="font-family: 'Noto Sans JP';">Noto Sans JP</option>
+                    </select>
+                    </div>
+                    <button id="change-font-button" class="styled-button">変更</button>
+                </div>
+            </div>
+
+
+            <div id="app-icon" class="settings-page" style="display: none;">
+                <h2>アプリアイコン</h2>
+                <!-- アプリアイコンの内容 -->
+            </div>
+
+            <div id="photos-videos" class="settings-page" style="display: none;">
+                <h2>写真と動画</h2>
+                <!-- 写真と動画の内容 -->
+            </div>
+
+            <div id="talk-settings" class="settings-page" style="display: none;">
+                <h2>トーク</h2>
+                <label for="theme-select">テーマカラーを選択:</label>
+                <select id="theme-select">
+                    <option value="default">デフォルト</option>
+                    <option value="dark-mode">ダークモード</option>
+                    <option value="summer-blue">サマーブルー</option>
+                    <option value="gradient-pink">グラデーションピンク</option>
+                    <option value="forest-green">フォレストグリーン</option>
+                    <option value="gradient-black-pink">ブラック＆ピンクグラデーション</option>
+                    <option value="sophisticated-theme">シックブラック</option>
+                </select>
+            </div>
+
+
+            <div id="friends" class="settings-page" style="display: none;">
+                <h2>友達</h2>
+                <!-- 友達の内容 -->
+            </div>
+
+            <div id="terms" class="settings-page" style="display: none;">
+                <h2>利用規約</h2>
+                <iframe src="../policy/terms.html" frameborder="0" style="width: 100%; height: calc(100vh - 50px);"></iframe>
+                <!-- 利用規約の内容 -->
+            </div>
+            <div id="privacy" class="settings-page" style="display: none;">
+                <h2>プライバシーポリシー</h2>
+                <iframe src="../policy/privacy.html" frameborder="0" style="width: 100%; height: calc(100vh - 50px);"></iframe>
+                <!-- 利用規約の内容 -->
+            </div>
+          
+            <div id="system" class="settings-page" style="display: none;">
+                <h2>システム情報</h2>
+                <p>バージョンは、3日に一度自動で更新されます。</p>
+                <button id="update" class="styled-button">バージョンを手動更新</button>
+                <!-- 利用規約の内容 -->
+            </div>
+
+
+            <div id="developer" class="settings-page" style="display: none;">
+                <h2>開発者より</h2>
+                <iframe src="../read/readme.html" frameborder="0" style="width: 100%; height: calc(100vh - 50px);"></iframe>
+                <!-- 開発陣よりの内容 -->
+            </div>
+        </div>
+    </div>
+  <script>
+  /*  
+    if ('serviceWorker' in navigator) {
+  // 最初のサービスワーカー登録
+  navigator.serviceWorker
+    .register('/service-worker.js')
+    .then(reg => { // 別の名前を使用（例: reg）
+      console.log('ServiceWorker registration successful with scope:', reg.scope);
+    })
+    .catch(error => {
+      console.log('ServiceWorker registration failed:', error);
+    });
+}
+*/
+  </script>
+    <script type="module" src="settings.js"></script>
+    <script src="../isLogined.js"></script>
+    <script src="../menuNavigation.js"></script>
+</body>
+</html>
